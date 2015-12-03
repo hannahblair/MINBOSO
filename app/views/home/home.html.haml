@@ -1,28 +1,22 @@
-%nav.navbar.navbar-default
+%nav.navbar.transparent.navbar-default
   .container
     / Brand and toggle get grouped for better mobile display
     .navbar-header
-      %button.navbar-toggle.collapsed{"data-target" => "#navbar-collapse-2", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle.transparent.collapsed{"data-target" => "#navbar-collapse-2", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "#"} Brand
+      %a.navbar-brand{:href => "#"}
     / Collect the nav links, forms, and other content for toggling
-    #navbar-collapse-2.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
+    #navbar-collapse-2.transparent.collapse.navbar-collapse
+      %ul.nav.navbar-nav.transparent.navbar-right
         %li
           %a{:href => "#"} Home
         %li
           %a{:href => "#"} About
         %li
-          %a{:href => "#"} Services
-        %li
-          %a{:href => "#"} Works
-        %li
-          %a{:href => "#"} News
-        %li
-          %a{:href => "#"} Contact
+          %a{:href => "#"} Feed
         %li
           %a.btn.btn-circle{"aria-controls" => "nav-collapse2", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#nav-collapse2"} Sign in
       #nav-collapse2.collapse.nav.navbar-nav.nav-collapse
@@ -37,8 +31,3 @@
 
 %body
   .wide
-  .col-xs-5.line
-    %hr/
-  .col-xs-2.logo
-  .col-xs-5.line
-    %hr/
